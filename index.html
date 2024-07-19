@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandidateSkillCheck - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-text">
+            <h1>CandidateSkill<span style="color:rgb(10, 219, 10);">Check</span></h1>
+            <p>Evaluate Skills Digitally in Just One Click</p>
+        </div>
+            <img src="media\hero.png" alt="Girl Image">
+        </div>
+        
+        <!-- Contact Form Section -->
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form onsubmit="handleSubmit(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company" required>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <!-- Key Features Section -->
+        <div class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+            <div class="feature">
+                <img src="media\Skill Evaluation.png" alt="Skill Evaluation">
+                <h3>Instant Skill Evaluation</h3>
+                <p>Evaluate candidate skills digitally with a single click.</p>
+            </div>
+            <div class="feature">
+                <img src="media\Filters.png" alt="Filters">
+                <h3>Advanced Filters</h3>
+                <p>Filter candidates based on specific skills.</p>
+            </div>
+            <div class="feature">
+                <img src="media\Skill Scores.png" alt="Skill Scores">
+                <h3>Pre-Evaluated Skill Scores</h3>
+                <p>Access pre-evaluated skill scores to make informed decisions.</p>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>&copy; 2024 CandidateSkillCheck. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+<script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        alert(`${name}, our team will contact you very soon.`);
+    }
+</script>
+</html>
