@@ -116,6 +116,16 @@
             padding: 20px;
             text-align: center;
         }
+        .demo button{
+            background-color: black;
+            color: white;
+            font-size: large;
+            font-weight: 900;
+            border-radius: 4%;
+            padding: 6px;
+            cursor: pointer;
+          }
+          
         @media (max-width: 1044px) {
             .hero-text{
                 margin: 35px;
